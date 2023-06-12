@@ -19,7 +19,7 @@
 
 # DESCRIPTION
 
-Exfilter all the documents from the principal folders on unlocked MacOS targets.
+Exfilter all the documents like excel or pdfs from the principal folders on unlocked MacOS targets.
 Stashes them in /loot/MacDocsExfill/$hostname grouped in subfolders:
 
 | Subfolder          | Content                                      |
